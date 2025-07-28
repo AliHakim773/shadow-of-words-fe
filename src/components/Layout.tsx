@@ -8,7 +8,7 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const { t, i18n } = useTranslation();
+  const {  i18n } = useTranslation();
   const location = useLocation();
   const isRTL = i18n.language === 'ar';
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,7 +63,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                       : 'text-gray-700 hover:text-purple-600'
                   }`}
                 >
-                  {t('nav.home')}
+                  {isRTL ? "الرئيسية" : "Home"}
                   {location.pathname === '/' && (
                     <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full"></div>
                   )}
@@ -75,7 +75,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   onClick={handleLanguageToggle}
                   className="px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white"
                 >
-                  {t('nav.language')}
+                  {isRTL ? "العربية" : "English"}
                 </button>
               </div>
 
@@ -126,7 +126,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 </h3>
                 <div className="space-y-2">
                   <Link to="/" className="block text-gray-300 hover:text-white transition-colors duration-200">
-                    {t('nav.home')}
+                    {isRTL ? "الرئيسية" : "Home"}
                   </Link>
                 </div>
               </div>

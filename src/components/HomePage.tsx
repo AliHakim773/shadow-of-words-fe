@@ -5,7 +5,7 @@ import BOOKS from '../constants/books-constants';
 import { Book } from '../types';
 
 const HomePage: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const isRTL = i18n.language === 'ar';
 
@@ -36,11 +36,11 @@ const HomePage: React.FC = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent leading-tight">
-            {t('home.title')}
+            {isRTL ? "مجموعة الأستاذة فاطمة" : "Professor Fatima's Collection"}
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
-            {t('home.subtitle')}
+            {isRTL ? "اكتشف عالم الكلمات والعواطف من خلال مجموعة المؤلف الحصرية" : "Discover the world of words and emotions through our exclusive author collection"}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -173,7 +173,7 @@ interface BookCardProps {
 }
 
 const BookCard: React.FC<BookCardProps> = ({ book, index }) => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const isRTL = i18n.language === 'ar';
 
   const title = isRTL ? book.title_ar : book.title_en;
@@ -221,7 +221,7 @@ const BookCard: React.FC<BookCardProps> = ({ book, index }) => {
             ? 'bg-green-500/90 text-white' 
             : 'bg-red-500/90 text-white'
         }`}>
-          {book.available ? t('book.available') : t('book.outOfStock')}
+          {book.available ? isRTL ? "متوفر" : "Available" : isRTL ? "غير متوفر" : "Out of Stock"}
         </div>
       </div>
 
@@ -231,7 +231,7 @@ const BookCard: React.FC<BookCardProps> = ({ book, index }) => {
             {title}
           </h3>
           <p className="text-sm text-purple-600 font-medium mb-3">
-            {t('home.aboutAuthor')}: {author}
+            {isRTL ? "عن المؤلف" : "About the Author"}: {author}
           </p>
           <p className="text-gray-700 text-sm line-clamp-3 leading-relaxed">
             {description}
@@ -244,13 +244,13 @@ const BookCard: React.FC<BookCardProps> = ({ book, index }) => {
             disabled
             className={`flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 px-6 rounded-lg text-center disabled:hover:from-purple-600 disabled:hover:to-pink-600 disabled:cursor-not-allowed hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl disabled:hover:opacity-50`}
           >
-            {t('home.orderNow')}
+                {isRTL ? "اطلب الآن" : "Order Now"}
           </button>
           <Link 
             to={`/book/${book.id}`}
             className="flex-1 border-2 border-gray-300 text-gray-700 font-semibold py-3 px-6 rounded-lg text-center hover:border-purple-600 hover:text-purple-600 transition-all duration-300"
           >
-            {t('home.learnMore')}
+            {isRTL ? "اكتشف المزيد" : "Learn More"}
           </Link>
         </div>
       </div>

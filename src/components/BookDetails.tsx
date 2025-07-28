@@ -6,7 +6,7 @@ import { Book } from '../types';
 
 const BookDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const [book, setBook] = useState<Book | null>(null);
   const [loading, setLoading] = useState(true);
   const isRTL = i18n.language === 'ar';
@@ -27,7 +27,7 @@ const BookDetails: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="flex items-center justify-center min-h-96">
           <div className="spinner"></div>
-          <span className="ml-3">{t('common.loading')}</span>
+          <span className="ml-3">{isRTL ? "جاري التحميل" : "Loading..."}</span>
         </div>
       </div>
     );
@@ -41,7 +41,7 @@ const BookDetails: React.FC = () => {
             {isRTL ? 'الكتاب غير موجود' : 'Book not found'}
           </h2>
           <Link to="/" className="btn btn-primary">
-            {t('common.back')}
+            {isRTL ? "الرئيسية" : "Home"}
           </Link>
         </div>
       </div>
@@ -80,7 +80,7 @@ const BookDetails: React.FC = () => {
         <div className="flex flex-col justify-center">
           <div className="mb-6">
             <Link to="/" className="text-blue-600 hover:text-blue-800 mb-4 inline-block">
-              ← {t('common.back')}
+              ← {isRTL ? "الرئيسية" : "Home"}
             </Link>
           </div>
 
@@ -89,12 +89,12 @@ const BookDetails: React.FC = () => {
           </h1>
           
           <p className="text-xl text-gray-600 mb-6 fade-in">
-            {t('home.aboutAuthor')}: {author}
+            {isRTL ? "عن المؤلف" : "About the Author"}: {author}
           </p>
 
           <div className="prose prose-lg max-w-none mb-8 fade-in">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              {t('home.aboutBook')}
+              {isRTL ? "عن الكتاب" : "About the Book"}
             </h3>
             <p className="text-gray-700 leading-relaxed whitespace-pre-line">
               {description}
@@ -103,9 +103,9 @@ const BookDetails: React.FC = () => {
 
           <div className="flex items-center justify-between mb-8 p-6 bg-gray-50 rounded-xl">
             <div>
-              <span className="text-sm text-gray-600 block mb-1">{t('book.price')}</span>
+              <span className="text-sm text-gray-600 block mb-1">{isRTL ? "السعر" : "Price"}</span>
               <span className="text-3xl font-bold text-green-600">
-                {t('book.currency')}{book.price}
+                {isRTL ? "د.ك" : "$"}{book.price}
               </span>
             </div>
             <div className={`px-4 py-2 rounded-full font-medium ${
@@ -113,7 +113,7 @@ const BookDetails: React.FC = () => {
                 ? 'bg-green-100 text-green-800' 
                 : 'bg-red-100 text-red-800'
             }`}>
-              {book.available ? t('book.available') : t('book.outOfStock')}
+              {book.available ? isRTL ? "متوفر" : "Available" : isRTL ? "غير متوفر" : "Out of Stock"}
             </div>
           </div>
 
@@ -124,7 +124,7 @@ const BookDetails: React.FC = () => {
                
                 className="btn btn-primary flex-1 text-center text-lg py-4 disabled:cursor-not-allowed disabled:hover:bg-purple-600 disabled:hover:to-pink-600 disabled:hover:opacity-50"
               >
-                {t('home.orderBook')}
+                {isRTL ? "اطلب الآن" : "Order Now"}
               </button>
             </div>
           )}
