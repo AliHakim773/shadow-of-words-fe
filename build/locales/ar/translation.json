@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "admin": "الإدارة",
+    "language": "English"
+  },
+  "home": {
+    "title": "مجموعة المؤلفة",
+    "subtitle": "اكتشف العالم الجميل للكلمات والمشاعر",
+    "orderNow": "اطلب الآن",
+    "learnMore": "اعرف أكثر",
+    "aboutBook": "عن الكتاب",
+    "aboutAuthor": "عن المؤلفة",
+    "orderBook": "اطلب هذا الكتاب"
+  },
+  "book": {
+    "price": "السعر",
+    "available": "متوفر",
+    "outOfStock": "غير متوفر",
+    "currency": "د.ك"
+  },
+  "order": {
+    "title": "طلب الكتاب",
+    "customerInfo": "معلومات العميل",
+    "name": "الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "address": "عنوان التوصيل",
+    "quantity": "الكمية",
+    "total": "الإجمالي",
+    "payNow": "ادفع الآن",
+    "processing": "جاري المعالجة...",
+    "success": "تم تقديم الطلب بنجاح!",
+    "error": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+  },
+  "admin": {
+    "login": "تسجيل دخول الإدارة",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "signIn": "تسجيل الدخول",
+    "dashboard": "لوحة الإدارة",
+    "books": "إدارة الكتب",
+    "orders": "إدارة الطلبات",
+    "addBook": "إضافة كتاب جديد",
+    "editBook": "تعديل الكتاب",
+    "deleteBook": "حذف الكتاب",
+    "viewOrders": "عرض الطلبات",
+    "orderStatus": "حالة الطلب",
+    "updateStatus": "تحديث الحالة",
+    "logout": "تسجيل الخروج"
+  },
+  "status": {
+    "pending": "معلق",
+    "paid": "مدفوع",
+    "shipped": "تم الشحن",
+    "delivered": "تم التسليم",
+    "cancelled": "ملغي"
+  },
+  "common": {
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "view": "عرض",
+    "back": "رجوع",
+    "close": "إغلاق",
+    "loading": "جاري التحميل...",
+    "confirm": "هل أنت متأكد؟",
+    "yes": "نعم",
+    "no": "لا"
+  }
+}

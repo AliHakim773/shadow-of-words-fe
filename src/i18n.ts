@@ -17,7 +17,7 @@ i18n
     },
 
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
+      loadPath: '/shadow-of-words-fe/locales/{{lng}}/translation.json',
     },
 
     detection: {

@@ -26,8 +26,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     toggleLanguage();
   };
 
-  const isAdminPath = location.pathname.startsWith('/admin');
-
   return (
     <div className={`min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 ${isRTL ? 'font-arabic' : ''}`} lang={i18n.language} dir={isRTL ? 'rtl' : 'ltr'}>
       (

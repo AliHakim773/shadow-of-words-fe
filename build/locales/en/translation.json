@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "Home",
+    "admin": "Admin",
+    "language": "العربية"
+  },
+  "home": {
+    "title": "Author's Collection",
+    "subtitle": "Discover the beautiful world of words and emotions",
+    "orderNow": "Order Now",
+    "learnMore": "Learn More",
+    "aboutBook": "About This Book",
+    "aboutAuthor": "About the Author",
+    "orderBook": "Order This Book"
+  },
+  "book": {
+    "price": "Price",
+    "available": "Available",
+    "outOfStock": "Out of Stock",
+    "currency": "$"
+  },
+  "order": {
+    "title": "Order Book",
+    "customerInfo": "Customer Information",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "address": "Delivery Address",
+    "quantity": "Quantity",
+    "total": "Total",
+    "payNow": "Pay Now",
+    "processing": "Processing...",
+    "success": "Order placed successfully!",
+    "error": "Something went wrong. Please try again."
+  },
+  "admin": {
+    "login": "Admin Login",
+    "username": "Username",
+    "password": "Password",
+    "signIn": "Sign In",
+    "dashboard": "Admin Dashboard",
+    "books": "Books Management",
+    "orders": "Orders Management",
+    "addBook": "Add New Book",
+    "editBook": "Edit Book",
+    "deleteBook": "Delete Book",
+    "viewOrders": "View Orders",
+    "orderStatus": "Order Status",
+    "updateStatus": "Update Status",
+    "logout": "Logout"
+  },
+  "status": {
+    "pending": "Pending",
+    "paid": "Paid",
+    "shipped": "Shipped",
+    "delivered": "Delivered",
+    "cancelled": "Cancelled"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "back": "Back",
+    "close": "Close",
+    "loading": "Loading...",
+    "confirm": "Are you sure?",
+    "yes": "Yes",
+    "no": "No"
+  }
+}

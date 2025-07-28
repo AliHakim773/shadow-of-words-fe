@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Book } from '../types';
 import BOOKS from '../constants/books-constants';
+import { Book } from '../types';
 
 const HomePage: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const [books, setBooks] = useState<Book[]>(BOOKS);
 
   const isRTL = i18n.language === 'ar';
 
@@ -87,12 +86,12 @@ const HomePage: React.FC = () => {
 
           {/* Books Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {books.map((book, index) => (
+            {BOOKS.map((book, index) => (
               <BookCard key={book.id} book={book} index={index} />
             ))}
           </div>
           
-          {books.length === 0 && (
+          {BOOKS.length === 0 && (
             <div className="text-center py-16">
               <div className="w-24 h-24 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-12 h-12 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
