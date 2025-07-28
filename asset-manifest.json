@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shadow-of-words-fe/static/css/main.a89f6dfe.css",
+    "main.js": "/shadow-of-words-fe/static/js/main.1e9cdc82.js",
+    "static/media/shadow-of-words.jpg": "/shadow-of-words-fe/static/media/shadow-of-words.a8508987eb719d977193.jpg",
+    "index.html": "/shadow-of-words-fe/index.html",
+    "static/media/getFetch.cjs": "/shadow-of-words-fe/static/media/getFetch.7a7a1c81840c96d5a3ea.cjs"
+  },
+  "entrypoints": [
+    "static/css/main.a89f6dfe.css",
+    "static/js/main.1e9cdc82.js"
+  ]
+}
