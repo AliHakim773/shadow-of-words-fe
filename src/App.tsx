@@ -13,7 +13,7 @@ function App() {
           <Routes>
             {/* Public Routes */}
             <Route
-              path="/"
+              path="/shadow-of-words-fe"
               element={
                 <Layout>
                   <HomePage />
@@ -21,7 +21,7 @@ function App() {
               }
             />
             <Route
-              path="/book/:id"
+              path="/shadow-of-words-fe/book/:id"
               element={
                 <Layout>
                   <BookDetails />

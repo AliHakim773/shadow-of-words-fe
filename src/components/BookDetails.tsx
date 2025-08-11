@@ -40,7 +40,7 @@ const BookDetails: React.FC = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             {isRTL ? 'الكتاب غير موجود' : 'Book not found'}
           </h2>
-          <Link to="/" className="btn btn-primary">
+          <Link to="/shadow-of-words-fe" className="btn btn-primary">
             {isRTL ? "الرئيسية" : "Home"}
           </Link>
         </div>
@@ -79,7 +79,7 @@ const BookDetails: React.FC = () => {
         {/* Book Info */}
         <div className="flex flex-col justify-center">
           <div className="mb-6">
-            <Link to="/" className="text-blue-600 hover:text-blue-800 mb-4 inline-block">
+            <Link to="/shadow-of-words-fe" className="text-blue-600 hover:text-blue-800 mb-4 inline-block">
               ← {isRTL ? "الرئيسية" : "Home"}
             </Link>
           </div>

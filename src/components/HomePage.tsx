@@ -247,7 +247,7 @@ const BookCard: React.FC<BookCardProps> = ({ book, index }) => {
                 {isRTL ? "اطلب الآن" : "Order Now"}
           </button>
           <Link 
-            to={`/book/${book.id}`}
+            to={`/shadow-of-words-fe/book/${book.id}`}
             className="flex-1 border-2 border-gray-300 text-gray-700 font-semibold py-3 px-6 rounded-lg text-center hover:border-purple-600 hover:text-purple-600 transition-all duration-300"
           >
             {isRTL ? "اكتشف المزيد" : "Learn More"}
