@@ -38,7 +38,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="flex justify-between items-center h-20">
               {/* Logo */}
               <div className="flex items-center">
-                <Link to="/shadow-of-words-fe" className="flex items-center space-x-3 group">
+                <Link to="/" className="flex items-center space-x-3 group">
                   <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
                     <span className="text-white font-bold text-lg">S</span>
                   </div>
@@ -56,15 +56,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               {/* Navigation Links */}
               <div className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
                 <Link 
-                  to="/shadow-of-words-fe" 
+                  to="/" 
                   className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 group ${
-                    location.pathname === '/shadow-of-words-fe' 
+                    location.pathname === '/' 
                       ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg' 
                       : 'text-gray-700 hover:text-purple-600'
                   }`}
                 >
                   {isRTL ? "الرئيسية" : "Home"}
-                  {location.pathname === '/shadow-of-words-fe' && (
+                  {location.pathname === '/' && (
                     <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full"></div>
                   )}
                 </Link>
@@ -125,7 +125,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   {isRTL ? 'روابط سريعة' : 'Quick Links'}
                 </h3>
                 <div className="space-y-2">
-                  <Link to="/shadow-of-words-fe" className="block text-gray-300 hover:text-white transition-colors duration-200">
+                  <Link to="/" className="block text-gray-300 hover:text-white transition-colors duration-200">
                     {isRTL ? "الرئيسية" : "Home"}
                   </Link>
                 </div>
