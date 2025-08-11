@@ -8,7 +8,7 @@ const BOOKS = [
   description_en: "The book 'Shadow of Words' navigates the worlds of emotions and reflections, where the author weaves her words to be a mirror for a soul that contemplates life and its details with honesty and warmth. It is a book that embraces the reader with an emotional language, expressing the heart's whispers and deep thoughts about love, memories, humanity, and one's relationship with their Creator and those around them. In 'Shadow of Words', thoughts transform into a shadow that accompanies the reader, whispering to them with letters pulsing with life and leaving an impact on their soul.",
   author_ar: 'الأستاذة فاطمة مروة',
   author_en: 'Professor Fatima Marwa',
-  price: 7,
+  price: 15,
   cover_image: shadowOfWords,
   available: true,
   created_at: '2021-01-01',
