@@ -1,7 +1,7 @@
 {
   "name": "author-book-store",
   "version": "0.1.0",
-  "homepage": "https://alihakim773.github.io/shadow-of-words-fe",
+  "homepage": "https://betweenthe-words.com",
   "private": true,
   "dependencies": {
     "@stripe/react-stripe-js": "^2.4.0",
